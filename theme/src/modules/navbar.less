@@ -1,0 +1,33 @@
+/**
+ * Sample of some self contained module. Start by defining the variables that
+ * the user can override and the defined the style.
+ */
+/**
+ * Variables
+ */
+ @navTextColor: black;
+/**
+ * Style
+ */
+.my-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 1.2em;
+    justify-content: flex-end;
+    color: @navTextColor;
+}
+
+.rm-navbar ul {
+    list-style: none;
+}
+
+.rm-small-wrapper {
+    display: none;
+}
+
+.navblog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}

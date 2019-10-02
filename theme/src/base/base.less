@@ -1,0 +1,95 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #424242;
+@bgColorBody: #fff;
+@colorBody: #333;
+@baseFontSize: 100.01%;
+
+@textColorH4: black;
+@linktextColor: black;
+
+/**Customized font*/
+
+@fontFamilyTextMeOne: 'Text Me One', sans-serif;
+@fontFamilyFjallaOne: 'Fjalla One', sans-serif;
+@fontFamilyJosefinSans: 'Josefin Sans', sans-serif;
+
+@fontFamilyLibreBaskerville: 'Libre Baskerville', serif;
+@fontFamilyCinzel: 'Cinzel', serif;
+
+@fontFamilyAmaticSC: 'Amatic SC', cursive;
+@fontFamilyExo: 'Exo', sans-serif;
+@fontFamilyMitr: 'Mitr', sans-serif;
+@fontFamilyGentiumBasic: 'Gentium Basic', serif;
+@fontFamilyIBMPlexSansCondensed: 'IBM Plex Sans Condensed', sans-serif;
+@fontFamilyNotable: 'Notable', sans-serif;
+@fontFamilyAnton: 'Anton', sans-serif;
+
+
+
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html {
+    overflow-y: scroll;  // Always show scrollbar to avoid flickr
+    background-color: @bgColorHtml;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: @colorBody;
+    background-color: @bgColorBody;
+    height: 100%;
+    width: 100%;
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+h4 {
+    color: @textColorH4;
+}
+
+.inner-wrap .row {
+    margin: 0;
+    max-width: 100%;
+}
+
+a {
+    color: @linktextColor;
+}
+
+h1 {
+    word-wrap: break-word;
+}
+
+
+.wrap-all {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+// Affects all basic typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+// Responsive images
+img {
+    max-width: 100%;
+}
+
+/**
+ * Style for the stylechooser.
+ */
+
+ select {
+    width: 80%;
+}
+
+hr::after {
+    content: "";
+}

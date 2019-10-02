@@ -1,0 +1,82 @@
+/**
+ * Sample of some self contained module. Start by defining the variables that
+ * the user can override and the defined the style.
+ */
+/**
+ * Variables
+ */
+@bgColorMain: white;
+/**
+ * Style
+ */
+.outer-wrap-main {
+    flex: 1 0 auto;
+    flex-shrink: 0;
+}
+
+.inner-wrap-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    margin: 0;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+// .region-main {
+//     margin-bottom: @magicNumber * 2;
+//     padding-left: 0.5em;
+//     padding-right: 0.5em;
+// }
+
+.region-sidebar-left,
+.region-sidebar-right {
+    margin-bottom: @magicNumber * 2;
+}
+
+.outer-wrap-breadcrumb,
+.outer-wrap-main {
+    background-color: @bgColorMain;
+}
+
+.home-about,
+.latest,
+.offer-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.news-container,
+.recommended {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f7f6f0;
+}
+
+.home-heading,
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 50%;
+    min-height: 20em;
+    text-align: center;
+    position: relative;
+}
+
+.home-heading h2,
+.news-container h2 {
+    border-bottom: none;
+}
+
+.card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+}

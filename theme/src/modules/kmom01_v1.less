@@ -1,0 +1,140 @@
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+@navTextColor: #1e2939;
+@bgColorMain: white;
+
+
+h1,
+h2,
+h3,
+h4 {
+    border-bottom: none;
+}
+
+a:visited {
+    color: #333333;
+}
+
+.outer-wrap-header,
+.rm-desktop ul {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.outer-wrap-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.region-footer {
+    border-top: none;
+}
+
+.outer-wrap-breadcrumb,
+.outer-wrap-main {
+    background-color: @bgColorMain;
+}
+
+.my-navbar {
+    font-family: @fontFamilyAnton;
+    text-transform: uppercase;
+}
+
+.rm-desktop li a:hover {
+    text-decoration: none;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(253,190,52,.6) 30%, #000 50%, rgba(253,190,52,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.rm-navbar {
+    font-family: @fontFamilyAnton;
+}
+
+.rm-desktop li a {
+    text-decoration: none;
+    color: @navTextColor;
+    font-weight: bold;
+    font-family: @fontFamilyAnton;
+    font-size: 1.5rem;
+}
+
+.right {
+    float: right;
+}
+
+.blog-list-item h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    border-bottom-style: dashed;
+}
+
+.breadcrumb-list a:hover,
+.next-previous a:hover {
+    background-color: rgba(170, 169, 169, 0.596);
+    padding: 0.2em;
+}
+
+.breadcrumb-list a,
+.toc ul li a {
+    position: relative;
+    transition: all 2s;
+
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        width: 0;
+        content: '.';
+        color: transparent;
+        background: #aaa;
+        height: 1px;
+        margin: 0;
+        opacity: 0;
+    }
+
+    &:hover {
+        color: #fff;
+        z-index: 1;
+    }
+
+    &:hover:after {
+        z-index: -10;
+        animation: fill 1s forwards;
+        -webkit-animation: fill 1s forwards;
+        -moz-animation: fill 1s forwards;
+        opacity: 1;
+    }
+}
+
+.breadcrumb-list a,
+.toc li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #555;
+        color: white;
+    }
+}

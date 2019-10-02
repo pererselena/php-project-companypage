@@ -1,0 +1,49 @@
+/**
+ * Sample of some self contained module. Start by defining the variables that
+ * the user can override and the defined the style.
+ */
+/**
+ * Variables
+ */
+@borderColor: darkgray;
+@faviconColor: gray;
+@bgColorFooter: white;
+@textColorFooter: white;
+@linktextColor: white;
+/**
+ * Style
+ */
+.outer-wrap-footer {
+    flex-shrink: 0;
+    background-color: @bgColorFooter;
+    color: @textColorFooter;
+}
+
+.region-footer {
+    h4 {
+        border-bottom: none;
+    }
+}
+
+.footer-column-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.inner-wrap-footer p {
+    font-size: 1em;
+}
+
+.fab {
+    font-size: 2em;
+    color: @faviconColor;
+    margin-right: 1em;
+}
+
+iframe {
+    width: 80%;
+}

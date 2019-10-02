@@ -1,0 +1,148 @@
+@textColorH4: #fdbe34;
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr.first {
+    background-color: #ddd;
+}
+
+tr:hover {
+    background-color: #eee;
+}
+
+th {
+    background-color: #1f2735ed;
+    color: #fdbe34;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.icons {
+    padding-right: 1em;
+}
+
+img.thumb {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+
+.offer {
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+
+.offer ul {
+    list-style-type: none;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm input[type=text] {
+  width: 100%;
+  border: 3px solid #fdbe34;
+  border-right: none;
+  padding: 5px;
+  height: 3rem;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #fdbe34;
+}
+
+.searchButton input[type=submit] {
+  border: 1px solid #fdbe34;
+  background: #fdbe34;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  height: 3rem;
+}
+
+.wrap{
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.products {
+    display: flex;
+    padding-bottom: 5em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 3em;
+    text-align: center;
+}
+
+.button_view {
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #1f2735ed;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    a,
+    a:visited {
+        text-decoration: none;
+        color: @textColorH4;
+    }
+}
+
+.login-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.login .buttons_input {
+    width: 10em;
+    background-color: rgba(31, 39, 53, 0.9294117647058824);
+    color: rgb(253, 190, 52);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button_view:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,47 @@
+/**
+ * Sample of some self contained module. Start by defining the variables that
+ * the user can override and the defined the style.
+ */
+/**
+ * Variables
+ */
+@linktextColor: black;
+/**
+ * Style
+ */
+.next-previous {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.previous {
+    margin-right: 1em;
+}
+
+.region-breadcrumb {
+    margin-bottom: @magicNumber * 1.5;
+}
+
+.breadcrumb-list ul li {
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+
+.breadcrumb-list a,
+.next-previous a,
+.region-sidebar-left a {
+    color: @linktextColor;
+    text-decoration: none;
+}
+/**
+ * Sidebar layout
+ */
+.toc ul {
+    list-style: none;
+    margin-bottom: -16px;
+}
+
+.blog-toc ul {
+    list-style: none;
+}
